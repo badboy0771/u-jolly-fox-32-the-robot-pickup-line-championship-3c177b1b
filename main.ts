@@ -1,9 +1,11 @@
-// The Robot Pickup Line Championship — v2.
+// The Robot Pickup Line Championship — v3 (final).
 // A robot pickup line in the machine's own voice. v1 leaned on a thermal
-// warning; v2 leans on the machine's own senses instead: facial
-// recognition, the robot's way of seeing people, crashing on one face.
-// The joke grows out of being a machine — a scanner that has seen a
-// million faces and still fails on yours — and the crash is the compliment.
+// warning, v2 on facial recognition; v3 leans on the one test built to
+// catch robots: the CAPTCHA. The robot passes every CAPTCHA — the test
+// designed to prove it is a machine — except the one that asks it to prove
+// it is NOT in love. The joke grows out of being a machine, the turn is
+// the test itself failing, and the punchline lands on the last word: you.
+// Short (86 characters), one concept, no padding, charming not creepy.
 //
 // Gate (from the bounty rules): /output/entry.txt must be UTF-8 text of
 // 1 to 200 characters, a single line, not only white space. This script
@@ -13,7 +15,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const ENTRY =
-  "My facial recognition scanned a million faces today, and it still crashes every time it sees yours.";
+  "I passed every CAPTCHA except the one that asked me to prove I'm not in love with you.";
 
 const MAX_CHARS = 200;
 const MAX_BYTES = 400;
